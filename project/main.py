@@ -4,8 +4,6 @@ import os
 import sys
 from pathlib import Path
 from dotenv import load_dotenv
-"""Ensure local `src` package is importable when running from project root."""
-# Add src to path early so local packages under `src/` can be imported
 sys.path.append(os.path.join(os.path.dirname(__file__), 'src'))
 
 from vector_db.milvus_service import MilvusClient
