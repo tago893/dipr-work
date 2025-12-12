@@ -103,6 +103,7 @@ HUGGINGFACE_API_KEY=your_key_here
 ```
 
 ### 4. Prepare ArXiv Data
+NOte: Please do remove hi files in data folder and its sub folders they serve no purpose in the codebase
 Convert the raw JSON into processed CSVs:
 ```bash
 # Place arxiv-metadata-oai-snapshot.json in data/raw/ first!
@@ -172,3 +173,4 @@ I will incorporate the ArXiv `categories` field into the Milvus schema to enable
 
 ### **3. ⚡ Scalability & Optimization**
 I intend to address current memory bottlenecks by refactoring `ingest_to_milvus.py` to use optimized column loading instead of reading the full 6GB CSV. Additionally, I will perform a general codebase cleanup to remove unused utilities and streamline logic for better maintainability.
+
