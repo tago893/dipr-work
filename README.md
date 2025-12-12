@@ -153,13 +153,22 @@ The system uses a factory pattern in `src/generation/llm_service.py` to switch b
 
 **Usage:**
 ```python
-from src.generation.llm_service import LLMService
-
-# Initialize with provider
-llm = LLMService(provider="gemini") 
-# OR provider="openai", provider="huggingface"
-
 # Generate
 response = llm.generate_response(query, context_documents)
 print(response.content)
 ```
+
+---
+
+## 🔮 Future Roadmap
+
+As I continue to develop this project, I have identified several key areas for improvement and feature expansion. Here is what I plan to work on next:
+
+### **1. 🔐 Role-Based Access Control (RBAC)**
+I plan to implement secure access management using [Milvus's native RBAC capabilities](https://milvus.io/docs/rbac.md). This will allow me to define granular roles and permissions directly within the vector database, ensuring robust data security for multi-user environments.
+
+### **2. 🎯 Metadata Filtering with Categories**
+I will incorporate the ArXiv `categories` field into the Milvus schema to enable hybrid search. This allows filtering by specific scientific domains (e.g., *Quantum Physics*) before semantic retrieval, significantly improving result relevance and precision.
+
+### **3. ⚡ Scalability & Optimization**
+I intend to address current memory bottlenecks by refactoring `ingest_to_milvus.py` to use optimized column loading instead of reading the full 6GB CSV. Additionally, I will perform a general codebase cleanup to remove unused utilities and streamline logic for better maintainability.
