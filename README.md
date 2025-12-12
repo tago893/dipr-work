@@ -103,6 +103,7 @@ HUGGINGFACE_API_KEY=your_key_here
 ```
 
 ### 4. Prepare ArXiv Data
+NOte: Please do remove hi files in data folder and its sub folders they serve no purpose in the codebase
 Convert the raw JSON into processed CSVs:
 ```bash
 # Place arxiv-metadata-oai-snapshot.json in data/raw/ first!
