@@ -1,0 +1,17 @@
+# Essential packages
+sentence-transformers
+pymilvus
+python-dotenv
+openai
+
+# Milvus Lite (embedded vector database)
+milvus
+
+# Generation 
+google-generativeai
+
+
+# Additional utilities
+numpy
+pandas
+requests

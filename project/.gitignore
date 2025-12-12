@@ -1,0 +1,24 @@
+# Python internals
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Virtual Environments
+venv/
+.venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Project Data
+data/
