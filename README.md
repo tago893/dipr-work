@@ -174,3 +174,5 @@ I will incorporate the ArXiv `categories` field into the Milvus schema to enable
 ### **3. ⚡ Scalability & Optimization**
 I intend to address current memory bottlenecks by refactoring `ingest_to_milvus.py` to use optimized column loading instead of reading the full 6GB CSV. Additionally, I will perform a general codebase cleanup to remove unused utilities and streamline logic for better maintainability.
 
+
+If any issues faced please do raise on github issues to change and feel free to raise a pull request for the solution.
